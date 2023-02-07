@@ -12,13 +12,13 @@ console.log('un numero!')
 let resto = numero % 2
 console.log(resto)
 
-let dispari = []
-console.log(dispari)
+let dispari = 0
 // Se il numero è dispari
 if(resto === 1) {
     //lo salvo in una lista. 
-    numero += dispari
+    dispari += numero
 }
+console.log(dispari)
   
 //Continuiamo a chiedere un numero all’utente finchè non avremo 10 numeri dispari
 //scartare altri valori (numeri pari ed eventuali NaN).
