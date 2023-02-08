@@ -29,18 +29,14 @@ console.log('ciao')
 /////secondo tentativo
 
 
-
-//ciclo per chiedere all’utente un numero (prompt)
-//let numero = parseInt(prompt('Ciao, inserisci qui un numero.'));
-//console.log(numero);
-
-
+//lista numeri dispari
 const dispari = [];
 let i = 0;
 
+//ciclo per chiedere all’utente un numero (prompt)
 //Continuiamo a chiedere un numero all’utente finchè non avremo 10 numeri dispari
-while( i < 10){
-    numero = parseInt(prompt('Ciao, inserisci qui un numero.'));
+while( dispari.length < 10){
+    let numero = parseInt(prompt('Ciao, inserisci qui un numero.'));
 
     let resto = numero % 2;
     console.log(resto)
@@ -57,14 +53,11 @@ while( i < 10){
 }
 console.log(dispari)
 
-//Una volta ottenuti tutti i 10 numeri, stampiamoli in console uno alla volta.
-console.log(dispari[0])
-console.log(dispari[1])
-console.log(dispari[2])
-console.log(dispari[3])
-console.log(dispari[4])
-console.log(dispari[5])
-console.log(dispari[6])
-console.log(dispari[7])
-console.log(dispari[8])
-console.log(dispari[9])
+//stampa numeri in console
+
+for(let i = 0 ; i <dispari.length; i++){
+
+    const numeriDispari = dispari[i];
+    console.log(numeriDispari);
+}
+
