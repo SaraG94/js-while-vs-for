@@ -39,7 +39,7 @@ const dispari = [];
 let i = 0;
 
 //Continuiamo a chiedere un numero all’utente finchè non avremo 10 numeri dispari
-for(let i = 0; i < 10; i++){
+while( i < 10){
     numero = parseInt(prompt('Ciao, inserisci qui un numero.'));
 
     let resto = numero % 2;
